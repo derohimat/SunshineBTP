@@ -79,7 +79,7 @@ public class MainActivityFragment extends Fragment {
                 .create(SimpleService.OpenWeatherMap.class);
 
         Call<ApiResponse> listCall = service.getWeather("Bandung",
-                7, "2528ef91b3d13e10e3631b11bf8b5550");
+                7, "YOUR_API_KEY");
 
         listCall.enqueue(new Callback<ApiResponse>() {
             @Override
