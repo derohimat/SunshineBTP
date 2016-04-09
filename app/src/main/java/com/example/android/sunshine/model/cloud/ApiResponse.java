@@ -1,8 +1,9 @@
-package com.example.android.sunshine.model;
+package com.example.android.sunshine.model.cloud;
 
 import java.util.List;
 
 public class ApiResponse {
+
     public City city;
     public int cnt;
     public String cod;

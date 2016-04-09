@@ -11,7 +11,7 @@ public class Utils {
         // Because the API returns a unix timestamp (measured in seconds),
         // it must be converted to milliseconds in order to be converted to valid date.
         SimpleDateFormat shortenedDateFormat = new SimpleDateFormat("EEE MMM dd");
-        return shortenedDateFormat.format(time);
+        return shortenedDateFormat.format(time * 1000);
     }
 
     /**
